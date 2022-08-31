@@ -19,16 +19,9 @@ module tb();
         .resetn(rstn),
     
         // ----- GPIO -----
-        .mid_btn_key(1'b0),
-        .left_btn_key(1'b0), 
-        .right_btn_key(1'b0),
-        .up_btn_key(1'b0),
-        .down_btn_key(1'b0),
-        .switch(8'hff),
         .digital_num0(),
         .digital_num1(),
-        .digital_cs(),
-        .led()
+        .digital_cs()
     );
 
 endmodule

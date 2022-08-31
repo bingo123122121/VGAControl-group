@@ -3,7 +3,7 @@
 // Create Date: 2020/09/08 09:57:13
 //////////////////////////////////////////////////////////////////////////////////
 
-`define CONF_ADDR_BASE 32'h1faf_0000
+`define CONF_ADDR_BASE 32'hbfaf_0000
 `define CONF_ADDR_MASK 32'hffff_0000
 
 // 二路选择器：判断cpu的数据操作是数据存储器还是外设

@@ -8,17 +8,10 @@ module teach_soc_top(
     input           clk,
     input           resetn,
     
-    // ----- GPIO -----
-    input           mid_btn_key,
-    input           left_btn_key, 
-    input           right_btn_key,
-    input           up_btn_key,
-    input           down_btn_key,
-    input   [7:0]   switch,
+    // ----- confreg -----
     output  [6:0]   digital_num0,
     output  [6:0]   digital_num1,
-    output  [7:0]   digital_cs,
-    output  [7:0]   led
+    output  [7:0]   digital_cs
 );
 
 
@@ -142,14 +135,7 @@ confreg confreg (
     
     .digital_num0 (digital_num0  ),
     .digital_num1 (digital_num1  ),
-    .digital_cs   (digital_cs    ),
-    .led          (led           ),
-    .switch       (switch        ),
-    .mid_btn_key  (mid_btn_key   ),
-    .left_btn_key (left_btn_key  ),
-    .right_btn_key(right_btn_key ),
-    .up_btn_key   (up_btn_key    ),
-    .down_btn_key (down_btn_key  )
+    .digital_cs   (digital_cs    )
 );
     
 endmodule
