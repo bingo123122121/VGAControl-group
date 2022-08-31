@@ -1,0 +1,24 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../teach_trace_gen.srcs/sources_1/ip/clk_pll" \
+"../../../../teach_trace_gen.srcs/sources_1/ip/data_ram/sim/data_ram.v" \
+"../../../../teach_trace_gen.srcs/sources_1/ip/inst_ram/sim/inst_ram.v" \
+"../../../../teach_trace_gen.srcs/sources_1/ip/clk_pll/clk_pll_clk_wiz.v" \
+"../../../../teach_trace_gen.srcs/sources_1/ip/clk_pll/clk_pll.v" \
+"../../../../teach_trace_gen.srcs/sources_1/imports/new/alu.v" \
+"../../../../teach_trace_gen.srcs/sources_1/imports/new/brUnit.v" \
+"../../../../teach_trace_gen.srcs/sources_1/new/bridge/bridge_1x2.v" \
+"../../../../teach_trace_gen.srcs/sources_1/new/confreg/confeg.v" \
+"../../../../teach_trace_gen.srcs/sources_1/imports/new/cpu.v" \
+"../../../../teach_trace_gen.srcs/sources_1/imports/new/ctrl.v" \
+"../../../../teach_trace_gen.srcs/sources_1/imports/new/mux.v" \
+"../../../../teach_trace_gen.srcs/sources_1/imports/new/pc.v" \
+"../../../../teach_trace_gen.srcs/sources_1/imports/new/regFile.v" \
+"../../../../teach_trace_gen.srcs/sources_1/imports/new/signExt.v" \
+"../../../../teach_trace_gen.srcs/sources_1/new/teach_soc_top.v" \
+"../../../../teach_trace_gen.srcs/sim_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
