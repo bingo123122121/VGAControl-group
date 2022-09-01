@@ -19,7 +19,8 @@ module confreg(
     
     output  wire[6:0]   digital_num0,       // 右四个7段数码管数字
     output  wire[6:0]   digital_num1,       // 左四个7段数码管数字
-    output  wire[7:0]   digital_cs          // 数码管段选信号
+    output  wire[7:0]   digital_cs,         // 数码管段选信号
+    output  wire[7:0]   vga_num
     );
     
     wire conf_we;
@@ -27,6 +28,14 @@ module confreg(
     
     // 当前要显示的数字
     reg[31:0]   digital_num_v;
+    
+    //vag显示数字
+    reg[7:0] vga_reg;
+    always @(posedge clk) begin
+        if(rst == `RST_ENABLE) vga_reg <= 8'b0;
+        else vga_reg <= digital_num_v[31:24];
+    end
+    assign vga_num = vga_reg;
     
     // read confreg, on cycle delay
     reg[31:0] conf_rdata_reg;

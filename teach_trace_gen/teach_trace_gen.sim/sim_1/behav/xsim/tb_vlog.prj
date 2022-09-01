@@ -15,6 +15,7 @@ verilog xil_defaultlib  --include "../../../../teach_trace_gen.srcs/sources_1/ip
 "../../../../teach_trace_gen.srcs/sources_1/imports/new/regFile.v" \
 "../../../../teach_trace_gen.srcs/sources_1/imports/new/signExt.v" \
 "../../../../teach_trace_gen.srcs/sources_1/new/teach_soc_top.v" \
+"../../../../teach_trace_gen.srcs/sources_1/new/vga.v" \
 "../../../../teach_trace_gen.srcs/sim_1/new/tb.v" \
 
 # compile glbl module

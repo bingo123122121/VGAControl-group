@@ -11,7 +11,14 @@ module teach_soc_top(
     // ----- confreg -----
     output  [6:0]   digital_num0,
     output  [6:0]   digital_num1,
-    output  [7:0]   digital_cs
+    output  [7:0]   digital_cs,
+    
+    // ------- vga -------
+    output          hs,
+    output          vs,
+    output  [3:0]   r,
+    output  [3:0]   g,
+    output  [3:0]   b
 );
 
 
@@ -51,6 +58,7 @@ wire [3 :0] confreg_wen;
 wire [31:0] confreg_addr;
 wire [31:0] confreg_wdata;
 wire [31:0] confreg_rdata;
+wire [7 :0] vga_num;
     
 // cpu    
 cpu cpu (
@@ -135,7 +143,23 @@ confreg confreg (
     
     .digital_num0 (digital_num0  ),
     .digital_num1 (digital_num1  ),
-    .digital_cs   (digital_cs    )
+    .digital_cs   (digital_cs    ),
+    
+    .vga_num      (vga_num       )
+);
+
+// vga
+vga vga(
+    .clk(soc_clk),
+    .rst(resetn),
+    
+    .vga_num(vga_num),
+    
+    .hs(hs),
+    .vs(vs),
+    .r(r),
+    .g(g),
+    .b(b)
 );
     
 endmodule
