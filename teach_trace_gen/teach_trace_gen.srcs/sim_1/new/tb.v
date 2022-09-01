@@ -9,7 +9,7 @@ module tb();
         clk = 0;
         rstn = 0;
         
-        # 1000 rstn = 1;
+        # 100 rstn = 1;
     end
     
     always # 5 clk = ~clk;

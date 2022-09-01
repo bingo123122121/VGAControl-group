@@ -66,21 +66,13 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 4
-  set_param xicom.use_bs_reader 1
-  create_project -in_memory -part xc7a35tcsg324-1
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
+  reset_param project.defaultXPMLibraries 
+  open_checkpoint D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.runs/impl_1/teach_soc_top.dcp
   set_property webtalk.parent_dir D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.cache/wt [current_project]
   set_property parent.project_path D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.xpr [current_project]
   set_property ip_output_repo D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.runs/synth_1/teach_soc_top.dcp
-  read_ip -quiet D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/ip/inst_ram/inst_ram.xci
-  read_ip -quiet D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/ip/clk_pll/clk_pll.xci
-  read_ip -quiet D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/ip/data_ram/data_ram.xci
-  read_xdc D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/constrs_1/new/teach_soc.xdc
-  link_design -top teach_soc_top -part xc7a35tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
