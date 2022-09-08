@@ -1,173 +1,172 @@
 `timescale 1ns / 1ps
 
+// cpu就是按照电路图连线，组合各个组件的过程
 module cpu(
     input clk,
     input rst,
     
     output im_en,
-    output [3: 0] im_wen,
-    output [31: 0] im_addr,
-    output [31: 0] im_wd,
-    input [31: 0] im_rd,
+    output [3 :0] im_wen,
+    output [31:0] im_addr,
+    output [31:0] im_wd,
+    input [31:0] im_rd,
     
+    // cpu数据
     output dm_en,
-    output [3: 0] dm_wen,
-    output [31: 0] dm_addr,
-    output [31: 0] dm_wd,
-    input [31: 0] dm_rd
-    
+    output [3 :0] dm_wen,
+    output [31:0] dm_addr,
+    output [31:0] dm_wd,
+    input [31:0] dm_rd
     );
-        
-    // inst_mem、data_mem使能信号置reset信号
-    assign im_en = rst;
-    assign dm_en = rst;
     
-    // inst_mem只读不写
+    // instruction memory只读不写
     assign im_wen = 4'b0;
     assign im_wd = 32'b0;
     
-    // pc
-    wire pc_jmp;
-    wire pc_br;
-    wire [25: 0] pc_tgt;
-    wire [15: 0] pc_off;
-    wire [31: 0] pc_nxt;
+    // 使能信号置rst
+    assign im_en = rst;
+    assign dm_en = rst;
     
-    pc pc(
-        .clk(clk),
-        .rst(rst),
-        
-        .pc_jmp(pc_jmp),
-        .pc_br(pc_br),
-        .pc_tgt(pc_tgt),
-        .pc_off(pc_off),
-        
-        .pc_nxt(pc_nxt)
-    );
-    
-    assign im_addr = pc_nxt;
-    
-    
-    // ctrl
-    wire sel_rt_rd, sel_imm_rt, sel_alu_dm, sel_rs_sa;
-    wire [3: 0] alu_ctrl;
-    wire reg_we;
+    // 取指部件
     wire [1: 0] br_we;
+    wire [31: 0] rs_data;
+    wire [31: 0] rt_data;
+//    wire [3: 0] pc4;
+    wire [25: 0] inst_addr;
+//    wire [31: 0] sel_4_0;
+    wire pause;
+    wire drop;
     
-    ctrl ctrl(
-        .opcode(im_rd[31: 26]),
-        .func(im_rd[5: 0]),
-        
-        .sel_rt_rd(sel_rt_rd),
-        .sel_rs_sa(sel_rs_sa),
-        .sel_imm_rt(sel_imm_rt), 
-        .sel_alu_dm(sel_alu_dm), 
-        .alu_ctrl(alu_ctrl),
-        
-        .reg_we(reg_we),
-        .dm_we(dm_wen),
-        .br_we(br_we)
-    );
+//    wire [31: 0] inst_val;
+//    wire [31: 0] pc_val;
     
-    // signExt
-    wire [31: 0] imm_ext;
-    
-    signExt signExt(
-        .imm(im_rd[15: 0]),
-        
-        .imm_ext(imm_ext)
-    );
-    
-    // brUnit
-    wire [31: 0] rs_data, rt_data;
-    
-    
-    brUnit brUnit(
+    buffer0 buffer0(
         .clk(clk),
         .rst(rst),
         
+        ._br_we(br_we),
+        ._rs_data(rs_data),
+        ._rt_data(rt_data),
+//        ._pc4(pc4),
+        ._inst_addr(inst_addr),
+//        ._sel_4_0(sel_4_0),
+        .pause(pause),
+    
+        .pc_val(im_addr)
+    );
+    
+    // 译码部件
+    wire reg_we4;                        // 上一条指令的写寄存器信号
+    wire [31: 0] reg_wd;                 // 上一条指令要写的数据
+    wire [4: 0] reg_wa4;                 // 上一条指令的写寄存器地址
+    
+    wire reg_we1;                        // 下一条指令的写寄存器信号
+    wire dm_we1;
+    wire sel_rs_sa;
+    wire sel_imm_rt;
+    wire sel_alu_dm;
+    wire [3: 0] alu_ctrl;
+    wire [31: 0] imm_ext;
+    wire [4: 0] reg_wa1;               // 下一条指令的写寄存器地址
+    
+    buffer1 buffer1(
+        .clk(clk),
+        .rst(rst),
+        
+        ._inst(im_rd),
+//        ._pc_val(pc_val),
+        ._reg_we(reg_we4),
+        ._reg_wd(reg_wd),
+        ._reg_wa(reg_wa4),
+        ._pause(pause),
+        ._drop(drop),
+        
+        .reg_we_nxt(reg_we1),
+        .dm_we(dm_we1),
+        .br_we(br_we),
+        .sel_rs_sa(sel_rs_sa),
+        .sel_imm_rt(sel_imm_rt),
+        .sel_alu_dm(sel_alu_dm),
+        .alu_ctrl(alu_ctrl),
+        .imm_ext(imm_ext),
         .rs_data(rs_data),
         .rt_data(rt_data),
-        .inst(im_rd),
-        .pc4(pc_nxt[31: 28]),
-        .br_we(br_we),
-        
-        .pc_jmp(pc_jmp),
-        .pc_br(pc_br),
-        .pc_tgt(pc_tgt),
-        .pc_off(pc_off)
+        .reg_wa_nxt(reg_wa1),
+        .inst_addr(inst_addr),
+        .pause(pause),
+        .drop(drop),
+        .output_data(output_data)
+//        .sel_4_0(sel_4_0),
+//        .pc4(pc4)
     );
     
-    // regFile
-    wire [4: 0] wb_addr;
-    wire [31: 0] wb_data;
+    // 运算部件
+    wire reg_we2;
+    wire sel_alu_dm2;
+    wire [31: 0] alu_ans2;
+    wire [4: 0] reg_wa2;
     
-    regFile regFile(
+    buffer2 buffer2(
         .clk(clk),
         .rst(rst),
         
-        .reg_we(reg_we),
-        .rs_addr(im_rd[25: 21]),
-        .rt_addr(im_rd[20: 16]),
-        .wb_addr(wb_addr),
-        .wb_data(wb_data),
+        ._reg_we(reg_we1),
+        ._dm_we(dm_we1),
+        ._sel_rs_sa(sel_rs_sa),
+        ._sel_imm_rt(sel_imm_rt),
+        ._sel_alu_dm(sel_alu_dm),
+        ._alu_ctrl(alu_ctrl),
+        ._imm_ext(imm_ext),
+        ._rs_data(rs_data),
+        ._rt_data(rt_data),
+        ._reg_wa(reg_wa1),
+        .pause(pause),
         
-        .rs_data(rs_data),
-        .rt_data(rt_data)
+        .reg_we_(reg_we2),
+        .dm_we_(dm_wen),
+        .sel_alu_dm_(sel_alu_dm2),
+        .alu_ans(dm_addr),              // alu_ans是dm_addr
+        .rt_data_(dm_wd),               // rt_data是dm_wd
+        .reg_wa_(reg_wa2)
     );
     
-    assign dm_wd = rt_data;
-
-    // alu
-    wire [31: 0] num1, num2, ans;
+    // 取数部件
+    wire reg_we3;
+    wire sel_alu_dm3;
+    wire [31: 0] alu_ans3;
+    wire [4: 0] reg_wa3;
     
-    alu alu(
+    buffer3 buffer3(
         .clk(clk),
         .rst(rst),
         
-        .alu_ctrl(alu_ctrl),
-        .num1(num1),
-        .num2(num2),
+        ._reg_we(reg_we2),
+        ._dm_we(dm_wen),
+        ._sel_alu_dm(sel_alu_dm2),
+        ._alu_ans(dm_addr),
+        ._rt_data(dm_wd),
+        ._reg_wa(reg_wa2),
         
-        .ans(ans)
+        .reg_we_(reg_we3),
+        .sel_alu_dm_(sel_alu_dm3),
+        .alu_ans_(alu_ans3),
+        .reg_wa_(reg_wa3)
     );
     
-    assign dm_addr = ans;
-    
-    // mux_rt_rd
-    mux5 mux5(
-        .in1(im_rd[20: 16]),
-        .in2(im_rd[15: 11]),
-        .sel(sel_rt_rd),
+    // 写回部件
+    buffer4 buffer4(
+        .clk(clk),
+        .rst(rst),
         
-        .out(wb_addr)
+        ._reg_we(reg_we3),
+        ._sel_alu_dm(sel_alu_dm3),
+        ._dm_data(dm_rd),
+        ._alu_ans(alu_ans3),
+        ._reg_wa(reg_wa3),
+        
+        .reg_we_(reg_we4),
+        .reg_wd(reg_wd),
+        .reg_wa_(reg_wa4)
     );
-    
-    // mux_rs_sa
-    mux32 mux_rs_sa(
-        .in1(rs_data),
-        .in2(imm_ext),
-        .sel(sel_imm_rt),
-        
-        .out(num1)
-    );
-    
-    // mux_imm_rt
-    mux32 mux_imm_rt(
-        .in1(imm_ext),
-        .in2(rt_data),
-        .sel(sel_imm_rt),
-        
-        .out(num2)
-    );
-    
-    // mux_alu_dm
-    mux32 mux_alu_dm(
-        .in1(ans),
-        .in2(dm_rd),
-        .sel(sel_alu_dm),
-        
-        .out(wb_data)
-    ); 
     
 endmodule

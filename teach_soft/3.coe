@@ -1,2 +1,10 @@
 memory_initialization_radix=16;
-memory_initialization_vector=3c02bfaf ac480000 08100004 218c0000 21080001 ac480000 08100004 21ad0000;
+memory_initialization_vector=
+3c02bfaf,
+ac480000,
+08100004,
+218c0000,
+21080001,
+ac480000,
+08100004,
+21ad0000;

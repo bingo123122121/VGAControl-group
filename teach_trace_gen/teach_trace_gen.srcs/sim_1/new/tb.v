@@ -16,12 +16,7 @@ module tb();
     
     teach_soc_top teach_soc_top_u(
         .clk(clk),
-        .resetn(rstn),
-    
-        // ----- GPIO -----
-        .digital_num0(),
-        .digital_num1(),
-        .digital_cs()
+        .resetn(rstn)
     );
 
 endmodule

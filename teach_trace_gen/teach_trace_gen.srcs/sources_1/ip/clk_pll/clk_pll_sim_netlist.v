@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
 // Date        : Thu Sep  1 15:41:27 2022
 // Host        : LAPTOP-23T3KV5V running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/ip/clk_pll/clk_pll_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top clk_pll -prefix
+//               clk_pll_ clk_pll_sim_netlist.v
 // Design      : clk_pll
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -27,7 +27,6 @@ module clk_pll
         .soc_clk(soc_clk));
 endmodule
 
-(* ORIG_REF_NAME = "clk_pll_clk_wiz" *) 
 module clk_pll_clk_pll_clk_wiz
    (soc_clk,
     clk_in1);

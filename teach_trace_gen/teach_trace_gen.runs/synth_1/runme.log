@@ -15,69 +15,216 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 42788 
+INFO: Helper process launched with PID 1808 
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/signExt.v:10]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 848.223 ; gain = 234.277
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 851.453 ; gain = 240.773
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'teach_soc_top' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/new/teach_soc_top.v:7]
-INFO: [Synth 8-6157] synthesizing module 'clk_pll' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.runs/synth_1/.Xil/Vivado-46512-LAPTOP-23T3KV5V/realtime/clk_pll_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_pll' (1#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.runs/synth_1/.Xil/Vivado-46512-LAPTOP-23T3KV5V/realtime/clk_pll_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'cpu' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/cpu.v:3]
 INFO: [Synth 8-6157] synthesizing module 'pc' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/pc.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'pc' (2#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/pc.v:5]
-WARNING: [Synth 8-7023] instance 'pc' of module 'pc' has 8 connections declared, but only 7 given [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/cpu.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'pc' (1#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/pc.v:5]
+WARNING: [Synth 8-7023] instance 'pc' of module 'pc' has 8 connections declared, but only 7 given [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/cpu.v:35]
 INFO: [Synth 8-6157] synthesizing module 'ctrl' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/ctrl.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'ctrl' (3#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/ctrl.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl' (2#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/ctrl.v:3]
 INFO: [Synth 8-6157] synthesizing module 'signExt' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/signExt.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'signExt' (4#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/signExt.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'signExt' (3#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/signExt.v:3]
 INFO: [Synth 8-6157] synthesizing module 'brUnit' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/brUnit.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'brUnit' (5#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/brUnit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'brUnit' (4#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/brUnit.v:3]
 INFO: [Synth 8-6157] synthesizing module 'regFile' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/regFile.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'regFile' (6#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/regFile.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'regFile' (5#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/regFile.v:3]
 INFO: [Synth 8-6157] synthesizing module 'alu' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/alu.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'alu' (7#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/alu.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (6#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/alu.v:3]
 INFO: [Synth 8-6157] synthesizing module 'mux5' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/mux.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'mux5' (8#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/mux.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mux5' (7#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/mux.v:3]
 INFO: [Synth 8-6157] synthesizing module 'mux32' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/mux.v:14]
-INFO: [Synth 8-6155] done synthesizing module 'mux32' (9#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/mux.v:14]
-INFO: [Synth 8-6155] done synthesizing module 'cpu' (10#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/cpu.v:3]
-INFO: [Synth 8-6157] synthesizing module 'inst_ram' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.runs/synth_1/.Xil/Vivado-46512-LAPTOP-23T3KV5V/realtime/inst_ram_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'inst_ram' (11#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.runs/synth_1/.Xil/Vivado-46512-LAPTOP-23T3KV5V/realtime/inst_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mux32' (8#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/mux.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'cpu' (9#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/cpu.v:3]
+INFO: [Synth 8-6157] synthesizing module 'insMem' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:3]
+INFO: [Synth 8-4471] merging register 'imem_reg[16][7:0]' into 'imem_reg[17][7:0]' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:15]
+INFO: [Synth 8-4471] merging register 'imem_reg[13][7:0]' into 'imem_reg[17][7:0]' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:15]
+INFO: [Synth 8-4471] merging register 'imem_reg[9][7:0]' into 'imem_reg[17][7:0]' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:15]
+INFO: [Synth 8-4471] merging register 'imem_reg[8][7:0]' into 'imem_reg[17][7:0]' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:15]
+INFO: [Synth 8-4471] merging register 'imem_reg[7][7:0]' into 'imem_reg[19][7:0]' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:15]
+INFO: [Synth 8-4471] merging register 'imem_reg[6][7:0]' into 'imem_reg[15][7:0]' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:15]
+INFO: [Synth 8-4471] merging register 'imem_reg[5][7:0]' into 'imem_reg[17][7:0]' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:15]
+INFO: [Synth 8-4471] merging register 'imem_reg[4][7:0]' into 'imem_reg[12][7:0]' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:15]
+INFO: [Synth 8-4471] merging register 'imem_reg[3][7:0]' into 'imem_reg[11][7:0]' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:15]
+INFO: [Synth 8-4471] merging register 'imem_reg[2][7:0]' into 'imem_reg[10][7:0]' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:15]
+INFO: [Synth 8-4471] merging register 'imem_reg[1][7:0]' into 'imem_reg[17][7:0]' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:15]
+INFO: [Synth 8-4471] merging register 'imem_reg[0][7:0]' into 'imem_reg[17][7:0]' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:15]
+WARNING: [Synth 8-6014] Unused sequential element imem_reg[16] was removed.  [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:15]
+WARNING: [Synth 8-6014] Unused sequential element imem_reg[13] was removed.  [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:15]
+WARNING: [Synth 8-6014] Unused sequential element imem_reg[9] was removed.  [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:15]
+WARNING: [Synth 8-6014] Unused sequential element imem_reg[8] was removed.  [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:15]
+WARNING: [Synth 8-6014] Unused sequential element imem_reg[7] was removed.  [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:15]
+WARNING: [Synth 8-6014] Unused sequential element imem_reg[6] was removed.  [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:15]
+WARNING: [Synth 8-6014] Unused sequential element imem_reg[5] was removed.  [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:15]
+WARNING: [Synth 8-6014] Unused sequential element imem_reg[4] was removed.  [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:15]
+WARNING: [Synth 8-6014] Unused sequential element imem_reg[3] was removed.  [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:15]
+WARNING: [Synth 8-6014] Unused sequential element imem_reg[2] was removed.  [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:15]
+WARNING: [Synth 8-6014] Unused sequential element imem_reg[1] was removed.  [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:15]
+WARNING: [Synth 8-6014] Unused sequential element imem_reg[0] was removed.  [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:15]
+WARNING: [Synth 8-3848] Net imem[255] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[254] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[253] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[252] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[251] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[250] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[249] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[248] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[247] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[246] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[245] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[244] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[243] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[242] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[241] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[240] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[239] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[238] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[237] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[236] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[235] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[234] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[233] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[232] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[231] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[230] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[229] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[228] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[227] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[226] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[225] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[224] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[223] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[222] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[221] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[220] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[219] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[218] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[217] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[216] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[215] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[214] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[213] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[212] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[211] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[210] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[209] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[208] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[207] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[206] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[205] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[204] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[203] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[202] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[201] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[200] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[199] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[198] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[197] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[196] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[195] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[194] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[193] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[192] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[191] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[190] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[189] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[188] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[187] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[186] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[185] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[184] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[183] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[182] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[181] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[180] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[179] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[178] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[177] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[176] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[175] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[174] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[173] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[172] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[171] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[170] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[169] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[168] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[167] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[166] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[165] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[164] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[163] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[162] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[161] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[160] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[159] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[158] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[157] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+WARNING: [Synth 8-3848] Net imem[156] in module/entity insMem does not have driver. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:12]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'insMem' (10#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dataMem' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:44]
+WARNING: [Synth 8-4767] Trying to implement RAM 'dmem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "dmem_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'dataMem' (11#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/memory.v:44]
+WARNING: [Synth 8-689] width (4) of port connection 'we' does not match port width (1) of module 'dataMem' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/new/teach_soc_top.v:113]
 INFO: [Synth 8-6157] synthesizing module 'bridge_1x2' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/new/bridge/bridge_1x2.v:11]
 INFO: [Synth 8-6155] done synthesizing module 'bridge_1x2' (12#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/new/bridge/bridge_1x2.v:11]
-INFO: [Synth 8-6157] synthesizing module 'data_ram' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.runs/synth_1/.Xil/Vivado-46512-LAPTOP-23T3KV5V/realtime/data_ram_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'data_ram' (13#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.runs/synth_1/.Xil/Vivado-46512-LAPTOP-23T3KV5V/realtime/data_ram_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'confreg' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/new/confreg/confeg.v:10]
-INFO: [Synth 8-226] default block is never used [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/new/confreg/confeg.v:93]
-INFO: [Synth 8-226] default block is never used [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/new/confreg/confeg.v:124]
-INFO: [Synth 8-226] default block is never used [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/new/confreg/confeg.v:144]
-INFO: [Synth 8-6155] done synthesizing module 'confreg' (14#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/new/confreg/confeg.v:10]
-INFO: [Synth 8-6157] synthesizing module 'vga' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/new/vga.v:3]
-	Parameter H_SYNC bound to: 10'b0001100000 
-	Parameter H_BACK bound to: 10'b0000110000 
-	Parameter H_DISP bound to: 10'b1010000000 
-	Parameter H_FRONT bound to: 10'b0000010000 
-	Parameter H_TOTAL bound to: 10'b1100100000 
-	Parameter V_SYNC bound to: 10'b0000000010 
-	Parameter V_BACK bound to: 10'b0000100001 
-	Parameter V_DISP bound to: 10'b0111100000 
-	Parameter V_FRONT bound to: 10'b0000001010 
-	Parameter V_TOTAL bound to: 10'b1000001101 
-	Parameter RED_R bound to: 4'b1111 
-	Parameter RED_G bound to: 4'b0000 
-	Parameter RED_B bound to: 4'b0000 
-	Parameter BLACK_R bound to: 4'b0000 
-	Parameter BLACK_G bound to: 4'b0000 
-	Parameter BLACK_B bound to: 4'b0000 
-	Parameter WHITE_R bound to: 4'b1111 
-	Parameter WHITE_G bound to: 4'b1111 
-	Parameter WHITE_B bound to: 4'b1111 
-INFO: [Synth 8-4471] merging register 'g_reg_reg[3:0]' into 'r_reg_reg[3:0]' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/new/vga.v:116]
-INFO: [Synth 8-4471] merging register 'b_reg_reg[3:0]' into 'r_reg_reg[3:0]' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/new/vga.v:117]
-WARNING: [Synth 8-6014] Unused sequential element g_reg_reg was removed.  [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/new/vga.v:116]
-WARNING: [Synth 8-6014] Unused sequential element b_reg_reg was removed.  [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/new/vga.v:117]
-INFO: [Synth 8-6155] done synthesizing module 'vga' (15#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/new/vga.v:3]
+INFO: [Synth 8-226] default block is never used [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/new/confreg/confeg.v:97]
+INFO: [Synth 8-226] default block is never used [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/new/confreg/confeg.v:115]
+INFO: [Synth 8-6155] done synthesizing module 'confreg' (13#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/new/confreg/confeg.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vga' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/new/vga.v:382]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.runs/synth_1/.Xil/Vivado-22616-LAPTOP-23T3KV5V/realtime/clk_wiz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz' (14#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.runs/synth_1/.Xil/Vivado-22616-LAPTOP-23T3KV5V/realtime/clk_wiz_stub.v:5]
+WARNING: [Synth 8-7023] instance 'u_clk_wiz' of module 'clk_wiz' has 4 connections declared, but only 3 given [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/new/vga.v:396]
+INFO: [Synth 8-4471] merging register 'reg_b_reg[3:0]' into 'reg_g_reg[3:0]' [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/new/vga.v:506]
+WARNING: [Synth 8-6014] Unused sequential element reg_b_reg was removed.  [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/new/vga.v:506]
+INFO: [Synth 8-6155] done synthesizing module 'vga' (15#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/new/vga.v:382]
 INFO: [Synth 8-6155] done synthesizing module 'teach_soc_top' (16#1) [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/new/teach_soc_top.v:7]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[31]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[30]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[29]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[28]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[27]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[26]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[25]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[24]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[23]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[22]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[21]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[20]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[19]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[18]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[17]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[16]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[15]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[14]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[13]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[12]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[11]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[10]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[9]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[8]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[7]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[6]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[5]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[4]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[3]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[1]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_rdata[0]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_wen[3]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_wen[2]
+WARNING: [Synth 8-3331] design confreg has unconnected port confreg_wen[1]
 WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[31]
 WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[30]
 WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[29]
@@ -94,54 +241,58 @@ WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[19]
 WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[18]
 WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[17]
 WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[16]
-WARNING: [Synth 8-3331] design alu has unconnected port clk
-WARNING: [Synth 8-3331] design alu has unconnected port rst
-WARNING: [Synth 8-3331] design brUnit has unconnected port clk
-WARNING: [Synth 8-3331] design brUnit has unconnected port rst
-WARNING: [Synth 8-3331] design brUnit has unconnected port inst[31]
-WARNING: [Synth 8-3331] design brUnit has unconnected port inst[30]
-WARNING: [Synth 8-3331] design brUnit has unconnected port inst[29]
-WARNING: [Synth 8-3331] design brUnit has unconnected port inst[28]
-WARNING: [Synth 8-3331] design brUnit has unconnected port inst[27]
-WARNING: [Synth 8-3331] design brUnit has unconnected port inst[26]
-WARNING: [Synth 8-3331] design brUnit has unconnected port pc4[3]
-WARNING: [Synth 8-3331] design brUnit has unconnected port pc4[2]
-WARNING: [Synth 8-3331] design brUnit has unconnected port pc4[1]
-WARNING: [Synth 8-3331] design brUnit has unconnected port pc4[0]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[31]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[30]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[29]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[28]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[27]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[26]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[25]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[24]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[23]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[22]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[21]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[20]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[19]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[18]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[17]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[16]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[15]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[14]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[13]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[12]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[11]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[10]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[9]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[8]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[7]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[6]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[5]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[4]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[3]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[2]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[1]
-WARNING: [Synth 8-3331] design pc has unconnected port sel_4_0[0]
+WARNING: [Synth 8-3331] design dataMem has unconnected port rst
+WARNING: [Synth 8-3331] design dataMem has unconnected port _addr[31]
+WARNING: [Synth 8-3331] design dataMem has unconnected port _addr[30]
+WARNING: [Synth 8-3331] design dataMem has unconnected port _addr[29]
+WARNING: [Synth 8-3331] design dataMem has unconnected port _addr[28]
+WARNING: [Synth 8-3331] design dataMem has unconnected port _addr[27]
+WARNING: [Synth 8-3331] design dataMem has unconnected port _addr[26]
+WARNING: [Synth 8-3331] design dataMem has unconnected port _addr[25]
+WARNING: [Synth 8-3331] design dataMem has unconnected port _addr[24]
+WARNING: [Synth 8-3331] design dataMem has unconnected port _addr[23]
+WARNING: [Synth 8-3331] design dataMem has unconnected port _addr[22]
+WARNING: [Synth 8-3331] design dataMem has unconnected port _addr[21]
+WARNING: [Synth 8-3331] design dataMem has unconnected port _addr[20]
+WARNING: [Synth 8-3331] design dataMem has unconnected port _addr[19]
+WARNING: [Synth 8-3331] design dataMem has unconnected port _addr[18]
+WARNING: [Synth 8-3331] design dataMem has unconnected port _addr[17]
+WARNING: [Synth 8-3331] design dataMem has unconnected port _addr[16]
+WARNING: [Synth 8-3331] design dataMem has unconnected port _addr[15]
+WARNING: [Synth 8-3331] design dataMem has unconnected port _addr[14]
+WARNING: [Synth 8-3331] design dataMem has unconnected port _addr[13]
+WARNING: [Synth 8-3331] design dataMem has unconnected port _addr[12]
+WARNING: [Synth 8-3331] design dataMem has unconnected port _addr[11]
+WARNING: [Synth 8-3331] design dataMem has unconnected port _addr[10]
+WARNING: [Synth 8-3331] design dataMem has unconnected port _addr[9]
+WARNING: [Synth 8-3331] design dataMem has unconnected port _addr[8]
+WARNING: [Synth 8-3331] design insMem has unconnected port clk
+WARNING: [Synth 8-3331] design insMem has unconnected port _addr[31]
+WARNING: [Synth 8-3331] design insMem has unconnected port _addr[30]
+WARNING: [Synth 8-3331] design insMem has unconnected port _addr[29]
+WARNING: [Synth 8-3331] design insMem has unconnected port _addr[28]
+WARNING: [Synth 8-3331] design insMem has unconnected port _addr[27]
+WARNING: [Synth 8-3331] design insMem has unconnected port _addr[26]
+WARNING: [Synth 8-3331] design insMem has unconnected port _addr[25]
+WARNING: [Synth 8-3331] design insMem has unconnected port _addr[24]
+WARNING: [Synth 8-3331] design insMem has unconnected port _addr[23]
+WARNING: [Synth 8-3331] design insMem has unconnected port _addr[22]
+WARNING: [Synth 8-3331] design insMem has unconnected port _addr[21]
+WARNING: [Synth 8-3331] design insMem has unconnected port _addr[20]
+WARNING: [Synth 8-3331] design insMem has unconnected port _addr[19]
+WARNING: [Synth 8-3331] design insMem has unconnected port _addr[18]
+WARNING: [Synth 8-3331] design insMem has unconnected port _addr[17]
+WARNING: [Synth 8-3331] design insMem has unconnected port _addr[16]
+WARNING: [Synth 8-3331] design insMem has unconnected port _addr[15]
+WARNING: [Synth 8-3331] design insMem has unconnected port _addr[14]
+WARNING: [Synth 8-3331] design insMem has unconnected port _addr[13]
+WARNING: [Synth 8-3331] design insMem has unconnected port _addr[12]
+WARNING: [Synth 8-3331] design insMem has unconnected port _addr[11]
+WARNING: [Synth 8-3331] design insMem has unconnected port _addr[10]
+WARNING: [Synth 8-3331] design insMem has unconnected port _addr[9]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 923.234 ; gain = 309.289
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 962.898 ; gain = 352.219
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -154,23 +305,33 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 923.234 ; gain = 309.289
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 962.898 ; gain = 352.219
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 923.234 ; gain = 309.289
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 962.898 ; gain = 352.219
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 923.234 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 962.898 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [d:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/ip/inst_ram/inst_ram/inst_ram_in_context.xdc] for cell 'inst_ram'
-Finished Parsing XDC File [d:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/ip/inst_ram/inst_ram/inst_ram_in_context.xdc] for cell 'inst_ram'
-Parsing XDC File [d:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/ip/clk_pll/clk_pll/clk_pll_in_context.xdc] for cell 'clk_pll'
-Finished Parsing XDC File [d:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/ip/clk_pll/clk_pll/clk_pll_in_context.xdc] for cell 'clk_pll'
-Parsing XDC File [d:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/ip/data_ram/data_ram/data_ram_in_context.xdc] for cell 'data_ram'
-Finished Parsing XDC File [d:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/ip/data_ram/data_ram/data_ram_in_context.xdc] for cell 'data_ram'
+Parsing XDC File [d:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc] for cell 'vga/u_clk_wiz'
+Finished Parsing XDC File [d:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc] for cell 'vga/u_clk_wiz'
 Parsing XDC File [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/constrs_1/new/teach_soc.xdc]
+WARNING: [Vivado 12-584] No ports matched 'digital_num1[6]'. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/constrs_1/new/teach_soc.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'digital_num1[5]'. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/constrs_1/new/teach_soc.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'digital_num1[4]'. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/constrs_1/new/teach_soc.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'digital_num1[3]'. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/constrs_1/new/teach_soc.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'digital_num1[2]'. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/constrs_1/new/teach_soc.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'digital_num1[1]'. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/constrs_1/new/teach_soc.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'digital_num1[0]'. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/constrs_1/new/teach_soc.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'digital_num1[6]'. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/constrs_1/new/teach_soc.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'digital_num1[5]'. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/constrs_1/new/teach_soc.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'digital_num1[4]'. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/constrs_1/new/teach_soc.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'digital_num1[3]'. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/constrs_1/new/teach_soc.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'digital_num1[2]'. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/constrs_1/new/teach_soc.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'digital_num1[1]'. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/constrs_1/new/teach_soc.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'digital_num1[0]'. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/constrs_1/new/teach_soc.xdc:44]
 WARNING: [Vivado 12-584] No ports matched 'switch[7]'. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/constrs_1/new/teach_soc.xdc:46]
 WARNING: [Vivado 12-584] No ports matched 'switch[6]'. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/constrs_1/new/teach_soc.xdc:47]
 WARNING: [Vivado 12-584] No ports matched 'switch[5]'. [D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/constrs_1/new/teach_soc.xdc:48]
@@ -219,36 +380,32 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/teach_soc_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1034.152 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1085.656 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1034.152 ; gain = 0.000
-WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'data_ram' at clock pin 'clka' is different from the actual clock period '15.385', this can lead to different synthesis results.
-WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'inst_ram' at clock pin 'clka' is different from the actual clock period '15.385', this can lead to different synthesis results.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1085.656 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1037.270 ; gain = 423.324
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1085.656 ; gain = 474.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1037.270 ; gain = 423.324
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1085.656 ; gain = 474.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  d:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/ip/clk_pll/clk_pll/clk_pll_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  d:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/ip/clk_pll/clk_pll/clk_pll_in_context.xdc, line 4).
-Applied set_property DONT_TOUCH = true for inst_ram. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for clk_pll. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for data_ram. (constraint file  auto generated constraint, line ).
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  d:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  d:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/ip/clk_wiz/clk_wiz/clk_wiz_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for vga/u_clk_wiz. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1037.270 ; gain = 423.324
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1085.656 ; gain = 474.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1037.270 ; gain = 423.324
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1085.656 ; gain = 474.977
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -263,30 +420,36 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     32 Bit       Adders := 2     
 	   3 Input     32 Bit       Adders := 1     
-	   2 Input     10 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 2     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
 +---Registers : 
-	               32 Bit    Registers := 35    
-	               10 Bit    Registers := 2     
-	                8 Bit    Registers := 2     
-	                7 Bit    Registers := 2     
+	               32 Bit    Registers := 34    
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 265   
+	                7 Bit    Registers := 1     
 	                4 Bit    Registers := 3     
-	                1 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 4     
 	   2 Input     18 Bit        Muxes := 1     
-	   4 Input      8 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 144   
+	   2 Input      8 Bit        Muxes := 252   
 	  10 Input      5 Bit        Muxes := 1     
-	  11 Input      5 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 3     
-	  11 Input      4 Bit        Muxes := 1     
-	   4 Input      4 Bit        Muxes := 2     
-	   2 Input      4 Bit        Muxes := 12    
-	   3 Input      4 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 1     
-	   3 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 39    
+	  12 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 16    
+	   2 Input      1 Bit        Muxes := 286   
+	   5 Input      1 Bit        Muxes := 188   
+	   4 Input      1 Bit        Muxes := 64    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -301,16 +464,23 @@ Detailed RTL Component Info :
 +---Registers : 
 	               32 Bit    Registers := 1     
 +---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
 	   2 Input     18 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
 Module ctrl 
 Detailed RTL Component Info : 
 +---Muxes : 
 	  10 Input      5 Bit        Muxes := 1     
-	  11 Input      5 Bit        Muxes := 1     
-	  11 Input      4 Bit        Muxes := 1     
+	  12 Input      5 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module signExt 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
 Module regFile 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -334,6 +504,21 @@ Module mux32
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 1     
+Module insMem 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 8     
+Module dataMem 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 256   
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 144   
+	   2 Input      8 Bit        Muxes := 252   
+	   4 Input      2 Bit        Muxes := 16    
+	   5 Input      1 Bit        Muxes := 188   
+	   2 Input      1 Bit        Muxes := 250   
+	   4 Input      1 Bit        Muxes := 64    
 Module bridge_1x2 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -341,26 +526,25 @@ Detailed RTL Component Info :
 Module confreg 
 Detailed RTL Component Info : 
 +---Registers : 
-	               32 Bit    Registers := 2     
-	                8 Bit    Registers := 2     
-	                7 Bit    Registers := 2     
-	                4 Bit    Registers := 2     
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
 +---Muxes : 
-	   4 Input      8 Bit        Muxes := 1     
-	   4 Input      4 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
 Module vga 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     10 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 2     
 +---Registers : 
-	               10 Bit    Registers := 2     
-	                4 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
 +---Muxes : 
-	   2 Input      5 Bit        Muxes := 2     
-	   2 Input      4 Bit        Muxes := 12    
-	   3 Input      4 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -378,31 +562,146 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
-WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[31]
-WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[30]
-WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[29]
-WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[28]
-WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[27]
-WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[26]
-WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[25]
-WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[24]
-WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[23]
-WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[22]
-WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[21]
-WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[20]
-WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[19]
-WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[18]
-WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[17]
-WARNING: [Synth 8-3331] design confreg has unconnected port confreg_addr[16]
-INFO: [Synth 8-3886] merging instance 'vga/r_reg_reg[0]' (FDR) to 'vga/r_reg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'vga/r_reg_reg[1]' (FDR) to 'vga/r_reg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'vga/r_reg_reg[2]' (FDR) to 'vga/r_reg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'confreg/scan_enable_reg[0]' (FDR) to 'confreg/scan_enable_reg[4]'
-INFO: [Synth 8-3886] merging instance 'confreg/scan_enable_reg[1]' (FDR) to 'confreg/scan_enable_reg[5]'
-INFO: [Synth 8-3886] merging instance 'confreg/scan_enable_reg[2]' (FDR) to 'confreg/scan_enable_reg[6]'
-INFO: [Synth 8-3886] merging instance 'confreg/scan_enable_reg[3]' (FDR) to 'confreg/scan_enable_reg[7]'
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[18][4]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[14][4]' (FD) to 'insMem/imem_reg[11][7]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[19][4]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[15][4]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[12][4]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[17][4]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[11][4]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[10][4]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[18][1]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[14][1]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[19][1]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[15][1]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[12][1]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[17][1]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[11][1]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[10][1]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[18][0]' (FD) to 'insMem/imem_reg[11][7]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[14][0]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[19][0]' (FD) to 'insMem/imem_reg[11][7]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[15][0]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[12][0]' (FD) to 'insMem/imem_reg[11][7]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[17][0]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[11][0]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[10][0]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[18][6]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[14][6]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[10][6]' (FD) to 'insMem/imem_reg[11][7]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[19][6]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[15][6]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[17][6]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[12][6]' (FD) to 'insMem/imem_reg[11][6]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[11][6]' (FD) to 'insMem/imem_reg[14][7]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[18][7]' (FD) to 'insMem/imem_reg[14][7]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[14][7]' (FD) to 'insMem/imem_reg[14][5]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[10][7]' (FD) to 'insMem/imem_reg[14][5]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[19][7]' (FD) to 'insMem/imem_reg[14][5]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[15][7]' (FD) to 'insMem/imem_reg[14][5]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[17][7]' (FD) to 'insMem/imem_reg[14][5]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[12][7]' (FD) to 'insMem/imem_reg[14][5]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[11][7]' (FD) to 'insMem/imem_reg[11][5]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[18][5]' (FD) to 'insMem/imem_reg[11][5]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[14][5]' (FD) to 'insMem/imem_reg[14][3]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[10][5]' (FD) to 'insMem/imem_reg[14][3]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[19][5]' (FD) to 'insMem/imem_reg[11][5]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[15][5]' (FD) to 'insMem/imem_reg[14][3]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[17][5]' (FD) to 'insMem/imem_reg[14][3]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[12][5]' (FD) to 'insMem/imem_reg[14][3]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[11][5]' (FD) to 'insMem/imem_reg[11][3]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[18][3]' (FD) to 'insMem/imem_reg[11][3]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[14][3]' (FD) to 'insMem/imem_reg[14][2]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[10][3]' (FD) to 'insMem/imem_reg[11][3]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[19][3]' (FD) to 'insMem/imem_reg[14][2]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[15][3]' (FD) to 'insMem/imem_reg[11][3]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[17][3]' (FD) to 'insMem/imem_reg[14][2]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[12][3]' (FD) to 'insMem/imem_reg[14][2]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[11][3]' (FD) to 'insMem/imem_reg[11][2]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[18][2]' (FD) to 'insMem/imem_reg[14][2]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[14][2]' (FD) to 'insMem/imem_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[10][2]' (FD) to 'insMem/imem_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[19][2]' (FD) to 'insMem/imem_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[15][2]' (FD) to 'insMem/imem_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'insMem/imem_reg[17][2]' (FD) to 'insMem/imem_reg[12][2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insMem/\imem_reg[12][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (insMem/\imem_reg[11][2] )
+INFO: [Synth 8-3886] merging instance 'vga/reg_g_reg[0]' (FDR) to 'vga/reg_g_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga/reg_g_reg[1]' (FDR) to 'vga/reg_g_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/reg_g_reg[2]' (FDR) to 'vga/reg_g_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga/reg_r_reg[0]' (FDS) to 'vga/reg_r_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga/\reg_r_reg[1] )
+INFO: [Synth 8-3886] merging instance 'vga/reg_r_reg[2]' (FDS) to 'vga/reg_r_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[31][1]' (FDCE) to 'cpu/regFile/gpr_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[30][1]' (FDCE) to 'cpu/regFile/gpr_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[27][1]' (FDCE) to 'cpu/regFile/gpr_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[26][1]' (FDCE) to 'cpu/regFile/gpr_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[23][1]' (FDCE) to 'cpu/regFile/gpr_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[22][1]' (FDCE) to 'cpu/regFile/gpr_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[19][1]' (FDCE) to 'cpu/regFile/gpr_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[18][1]' (FDCE) to 'cpu/regFile/gpr_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[15][1]' (FDCE) to 'cpu/regFile/gpr_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[14][1]' (FDCE) to 'cpu/regFile/gpr_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[11][1]' (FDCE) to 'cpu/regFile/gpr_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[10][1]' (FDCE) to 'cpu/regFile/gpr_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[7][1]' (FDCE) to 'cpu/regFile/gpr_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[6][1]' (FDCE) to 'cpu/regFile/gpr_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[3][1]' (FDCE) to 'cpu/regFile/gpr_reg[2][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][1] )
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[31][2]' (FDCE) to 'cpu/regFile/gpr_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[30][2]' (FDCE) to 'cpu/regFile/gpr_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[27][2]' (FDCE) to 'cpu/regFile/gpr_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[26][2]' (FDCE) to 'cpu/regFile/gpr_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[23][2]' (FDCE) to 'cpu/regFile/gpr_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[22][2]' (FDCE) to 'cpu/regFile/gpr_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[19][2]' (FDCE) to 'cpu/regFile/gpr_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[18][2]' (FDCE) to 'cpu/regFile/gpr_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[15][2]' (FDCE) to 'cpu/regFile/gpr_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[14][2]' (FDCE) to 'cpu/regFile/gpr_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[11][2]' (FDCE) to 'cpu/regFile/gpr_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[10][2]' (FDCE) to 'cpu/regFile/gpr_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[7][2]' (FDCE) to 'cpu/regFile/gpr_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[6][2]' (FDCE) to 'cpu/regFile/gpr_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[3][2]' (FDCE) to 'cpu/regFile/gpr_reg[2][2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][2] )
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[11][3]' (FDCE) to 'cpu/regFile/gpr_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[6][3]' (FDCE) to 'cpu/regFile/gpr_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'cpu/regFile/gpr_reg[7][3]' (FDCE) to 'cpu/regFile/gpr_reg[2][3]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpu/\regFile/gpr_reg[2][0] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:30 ; elapsed = 00:01:31 . Memory (MB): peak = 1056.398 ; gain = 442.453
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1135.875 ; gain = 525.195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -414,13 +713,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:35 ; elapsed = 00:01:36 . Memory (MB): peak = 1056.398 ; gain = 442.453
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1135.875 ; gain = 525.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:47 ; elapsed = 00:01:48 . Memory (MB): peak = 1267.121 ; gain = 653.176
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1135.875 ; gain = 525.195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -432,7 +731,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:50 ; elapsed = 00:01:51 . Memory (MB): peak = 1267.121 ; gain = 653.176
+Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 1246.965 ; gain = 636.285
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -456,13 +755,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:53 ; elapsed = 00:01:53 . Memory (MB): peak = 1267.121 ; gain = 653.176
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1251.586 ; gain = 640.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:53 ; elapsed = 00:01:53 . Memory (MB): peak = 1267.121 ; gain = 653.176
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1251.586 ; gain = 640.906
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -481,25 +780,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:53 ; elapsed = 00:01:54 . Memory (MB): peak = 1267.121 ; gain = 653.176
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1251.586 ; gain = 640.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:53 ; elapsed = 00:01:54 . Memory (MB): peak = 1267.121 ; gain = 653.176
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1251.586 ; gain = 640.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:53 ; elapsed = 00:01:54 . Memory (MB): peak = 1267.121 ; gain = 653.176
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1251.586 ; gain = 640.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:53 ; elapsed = 00:01:54 . Memory (MB): peak = 1267.121 ; gain = 653.176
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1251.586 ; gain = 640.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -509,70 +808,68 @@ Report BlackBoxes:
 +------+--------------+----------+
 |      |BlackBox name |Instances |
 +------+--------------+----------+
-|1     |clk_pll       |         1|
-|2     |inst_ram      |         1|
-|3     |data_ram      |         1|
+|1     |clk_wiz       |         1|
 +------+--------------+----------+
 
 Report Cell Usage: 
-+------+---------+------+
-|      |Cell     |Count |
-+------+---------+------+
-|1     |clk_pll  |     1|
-|2     |data_ram |     1|
-|3     |inst_ram |     1|
-|4     |CARRY4   |    38|
-|5     |LUT1     |    87|
-|6     |LUT2     |   146|
-|7     |LUT3     |   153|
-|8     |LUT4     |    96|
-|9     |LUT5     |    94|
-|10    |LUT6     |   869|
-|11    |MUXF7    |   256|
-|12    |FDCE     |  1041|
-|13    |FDRE     |   141|
-|14    |IBUF     |     1|
-|15    |OBUF     |    36|
-+------+---------+------+
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |clk_wiz |     1|
+|2     |CARRY4  |    18|
+|3     |LUT1    |    14|
+|4     |LUT2    |   115|
+|5     |LUT3    |   662|
+|6     |LUT4    |   159|
+|7     |LUT5    |   327|
+|8     |LUT6    |  2666|
+|9     |MUXF7   |  1166|
+|10    |MUXF8   |   512|
+|11    |FDCE    |   256|
+|12    |FDRE    |  2129|
+|13    |FDSE    |     1|
+|14    |IBUF    |     1|
+|15    |OBUF    |    29|
++------+--------+------+
 
 Report Instance Areas: 
 +------+-------------+-----------+------+
 |      |Instance     |Module     |Cells |
 +------+-------------+-----------+------+
-|1     |top          |           |  3023|
-|2     |  bridge_1x2 |bridge_1x2 |    34|
-|3     |  confreg    |confreg    |   165|
-|4     |  cpu        |cpu        |  2624|
-|5     |    alu      |alu        |    21|
-|6     |    brUnit   |brUnit     |    40|
-|7     |    pc       |pc         |    30|
-|8     |    regFile  |regFile    |  2533|
-|9     |  vga        |vga        |    98|
+|1     |top          |           |  8057|
+|2     |  bridge_1x2 |bridge_1x2 |     1|
+|3     |  confreg    |confreg    |    90|
+|4     |  cpu        |cpu        |  1992|
+|5     |    brUnit   |brUnit     |     3|
+|6     |    pc       |pc         |   930|
+|7     |    regFile  |regFile    |  1059|
+|8     |  dataMem    |dataMem    |  5825|
+|9     |  vga        |vga        |   119|
 +------+-------------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:53 ; elapsed = 00:01:54 . Memory (MB): peak = 1267.121 ; gain = 653.176
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1251.586 ; gain = 640.906
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:47 ; elapsed = 00:01:52 . Memory (MB): peak = 1267.121 ; gain = 539.141
-Synthesis Optimization Complete : Time (s): cpu = 00:01:53 ; elapsed = 00:01:54 . Memory (MB): peak = 1267.121 ; gain = 653.176
+Synthesis finished with 0 errors, 0 critical warnings and 101 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 1251.586 ; gain = 518.148
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 1251.586 ; gain = 640.906
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1267.121 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 294 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1251.586 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1696 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'teach_soc_top' is not ideal for floorplanning, since the cellview 'regFile' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1267.121 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1251.586 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-57 Infos, 127 Warnings, 0 Critical Warnings and 0 Errors encountered.
+201 Infos, 275 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:57 ; elapsed = 00:01:58 . Memory (MB): peak = 1267.121 ; gain = 928.445
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1267.121 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1251.586 ; gain = 912.664
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1251.586 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.runs/synth_1/teach_soc_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file teach_soc_top_utilization_synth.rpt -pb teach_soc_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Sep  1 15:47:46 2022...
+INFO: [Common 17-206] Exiting Vivado at Fri Sep  2 08:47:29 2022...

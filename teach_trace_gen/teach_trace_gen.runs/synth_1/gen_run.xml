@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1662018715">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1662079578">
   <File Type="PA-TCL" Name="teach_soc_top.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="teach_soc_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="teach_soc_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="teach_soc_top.vds"/>
   <File Type="RDS-UTIL" Name="teach_soc_top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="teach_soc_top_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="teach_soc_top.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="teach_soc_top_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="teach_soc_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/new/alu.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../VGAController/VGAController.srcs/sources_1/imports/new/alu.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../VGAControl-group/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/alu.v"/>
         <Attr Name="ImportTime" Val="1661771982"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -22,7 +19,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/brUnit.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../VGAController/VGAController.srcs/sources_1/imports/new/brUnit.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../VGAControl-group/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/brUnit.v"/>
         <Attr Name="ImportTime" Val="1661772121"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -49,8 +46,8 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/cpu.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../VGAController/VGAController.srcs/sources_1/imports/new/cpu.v"/>
-        <Attr Name="ImportTime" Val="1661915868"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../VGAControl-group/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/cpu.v"/>
+        <Attr Name="ImportTime" Val="1661934013"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -58,8 +55,17 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/ctrl.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../VGAController/VGAController.srcs/sources_1/imports/new/ctrl.v"/>
-        <Attr Name="ImportTime" Val="1661833738"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../VGAControl-group/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/ctrl.v"/>
+        <Attr Name="ImportTime" Val="1661935122"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/memory.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../myCPU/myCPU.srcs/sources_1/new/memory.v"/>
+        <Attr Name="ImportTime" Val="1661416092"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -67,7 +73,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/mux.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../VGAController/VGAController.srcs/sources_1/imports/new/mux.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../VGAControl-group/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/mux.v"/>
         <Attr Name="ImportTime" Val="1661780810"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -76,7 +82,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/pc.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../VGAController/VGAController.srcs/sources_1/imports/new/pc.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../VGAControl-group/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/pc.v"/>
         <Attr Name="ImportTime" Val="1661784800"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -85,7 +91,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/regFile.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../VGAController/VGAController.srcs/sources_1/imports/new/regFile.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../VGAControl-group/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/regFile.v"/>
         <Attr Name="ImportTime" Val="1661772121"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -94,7 +100,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/new/signExt.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../VGAController/VGAController.srcs/sources_1/imports/new/signExt.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../VGAControl-group/teach_trace_gen/teach_trace_gen.srcs/sources_1/imports/new/signExt.v"/>
         <Attr Name="ImportTime" Val="1661772120"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -117,7 +123,39 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/ip/inst_ram/inst_ram.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../teach_soc/teach_soc.srcs/sources_1/ip/inst_ram/inst_ram.xci"/>
+        <Attr Name="ImportTime" Val="1600400126"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/clk_pll/clk_pll.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../teach_soc/teach_soc.srcs/sources_1/ip/clk_pll/clk_pll.xci"/>
+        <Attr Name="ImportTime" Val="1600400126"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/../teach_soft/3.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../teach_soft/vga_test.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../teach_soft/4.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -154,7 +192,5 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="inst_ram"/>
-  <BlockFileSet Type="BlockSrcs" Name="clk_pll"/>
-  <BlockFileSet Type="BlockSrcs" Name="data_ram"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz"/>
 </GenRun>

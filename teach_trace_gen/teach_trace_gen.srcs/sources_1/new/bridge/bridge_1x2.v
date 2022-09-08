@@ -54,7 +54,7 @@ module bridge_1x2(
     
     // 判断cpu读操作是从数据存储器读还是confreg读
     always @ (posedge clk) begin
-        if (reset) begin
+        if (!reset) begin
             sel_sram_r <= 1'b0;
             sel_conf_r <= 1'b0;
         end else begin

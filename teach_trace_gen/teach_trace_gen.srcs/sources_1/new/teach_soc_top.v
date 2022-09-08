@@ -10,7 +10,6 @@ module teach_soc_top(
     
     // ----- confreg -----
     output  [6:0]   digital_num0,
-    output  [6:0]   digital_num1,
     output  [7:0]   digital_cs,
     
     // ------- vga -------
@@ -22,14 +21,14 @@ module teach_soc_top(
 );
 
 
-// clk pll
-wire soc_clk;
-clk_pll clk_pll(
-    // Clock out ports
-    .soc_clk(soc_clk),     // output soc_clk
-   // Clock in ports
-    .clk_in1(clk)          // input clk_in1
-);
+//// clk pll
+//wire soc_clk;
+//clk_pll clk_pll(
+//    // Clock out ports
+//    .soc_clk(soc_clk),     // output soc_clk
+//   // Clock in ports
+//    .clk_in1(clk)          // input clk_in1
+//);
 
 // cpuÖ¸Áî´æ´¢Æ÷
 wire        cpu_inst_en;
@@ -61,27 +60,47 @@ wire [31:0] confreg_rdata;
 wire [7 :0] vga_num;
     
 // cpu    
-cpu cpu (
-    .clk              (soc_clk   ),
-//    .clk              (clk   ),
-    .rst              (resetn    ),  //low active
-
-    .im_en     (cpu_inst_en   ),
-    .im_wen    (cpu_inst_wen  ),
-    .im_addr   (cpu_inst_addr ),
-    .im_wd  (cpu_inst_wdata),
-    .im_rd  (cpu_inst_rdata),
+cpu cpu(
+    .clk(clk),
+    .rst(resetn),
     
-    .dm_en     (cpu_data_en   ),
-    .dm_wen    (cpu_data_wen  ),
-    .dm_addr   (cpu_data_addr ),
-    .dm_wd  (cpu_data_wdata),
-    .dm_rd  (cpu_data_rdata)
+    .im_rd(cpu_inst_rdata),
+    .dm_rd(cpu_data_rdata),
+    
+    .im_en(cpu_inst_en),
+    .im_wen(cpu_inst_wen),
+    .im_addr(cpu_inst_addr),
+    .im_wd(cpu_inst_wdata),
+
+    .dm_en(cpu_data_en),
+    .dm_wen(cpu_data_wen),
+    .dm_wd(cpu_data_wdata),
+    .dm_addr(cpu_data_addr)
 );
+
+//insMem insMem(
+//    .clk(clk),
+//    .rst(resetn),
+    
+//    ._addr(cpu_inst_addr),
+    
+//    .idata(cpu_inst_rdata)
+//);
+
+//dataMem dataMem(
+//    .clk(clk),
+//    .rst(resetn),
+    
+//    .we(data_sram_wen),
+//    ._addr(data_sram_addr),
+//    .wdata(data_sram_wdata),
+    
+//    .rdata(data_sram_rdata)
+//);
 
 // inst ram
 inst_ram inst_ram (
-  .clka (soc_clk            ),  // input wire clka
+  .clka (clk            ),  // input wire clka
 //  .clka              (clk   ),
 
   .ena  (cpu_inst_en        ),  // input wire ena
@@ -93,7 +112,7 @@ inst_ram inst_ram (
 
 // bridge 1x2
 bridge_1x2 bridge_1x2 (
-    .clk            (soc_clk        ),
+    .clk            (clk        ),
 //    .clk              (clk   ),
     .reset          (~resetn        ),
     
@@ -118,7 +137,7 @@ bridge_1x2 bridge_1x2 (
 
 // data ram
 data_ram data_ram (
-  .clka (soc_clk             ),  // input wire clka
+  .clka (clk             ),  // input wire clka
 //  .clka              (clk   ),
 
   .ena  (data_sram_en        ),  // input wire ena
@@ -130,10 +149,9 @@ data_ram data_ram (
 
 // confreg
 confreg confreg (
-    .clk          (soc_clk       ),
-//    .clk              (clk   ),
+    .clk          (clk       ),
 
-    .rst          (~resetn       ),
+    .rst          (resetn       ),
     
     .confreg_en   (confreg_en    ),
     .confreg_wen  (confreg_wen   ),
@@ -142,7 +160,6 @@ confreg confreg (
     .confreg_rdata(confreg_rdata ),
     
     .digital_num0 (digital_num0  ),
-    .digital_num1 (digital_num1  ),
     .digital_cs   (digital_cs    ),
     
     .vga_num      (vga_num       )
@@ -150,10 +167,10 @@ confreg confreg (
 
 // vga
 vga vga(
-    .clk(soc_clk),
-    .rst(resetn),
+    .clk(clk),
+    .rstn(resetn),
     
-    .vga_num(vga_num),
+    .num(vga_num),
     
     .hs(hs),
     .vs(vs),

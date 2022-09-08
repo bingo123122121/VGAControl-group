@@ -60,19 +60,26 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 4
-  reset_param project.defaultXPMLibraries 
-  open_checkpoint D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.runs/impl_1/teach_soc_top.dcp
+  set_param xicom.use_bs_reader 1
+  create_project -in_memory -part xc7a35tcsg324-1
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.cache/wt [current_project]
   set_property parent.project_path D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.xpr [current_project]
   set_property ip_output_repo D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+  set_property XPM_LIBRARIES XPM_CDC [current_project]
+  add_files -quiet D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.runs/synth_1/teach_soc_top.dcp
+  read_ip -quiet D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/ip/clk_wiz/clk_wiz.xci
+  read_xdc D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/constrs_1/new/teach_soc.xdc
+  link_design -top teach_soc_top -part xc7a35tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
@@ -167,7 +174,7 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+  set_property XPM_LIBRARIES XPM_CDC [current_project]
   catch { write_mem_info -force teach_soc_top.mmi }
   write_bitstream -force teach_soc_top.bit 
   catch {write_debug_probes -quiet -force teach_soc_top}

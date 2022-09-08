@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
 // Date        : Thu Sep  1 15:41:27 2022
 // Host        : LAPTOP-23T3KV5V running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               D:/Code/VivadoProject/vivado_projects/VGAControl/teach_trace_gen/teach_trace_gen.srcs/sources_1/ip/clk_pll/clk_pll_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top clk_pll -prefix
+//               clk_pll_ clk_pll_stub.v
 // Design      : clk_pll
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a35tcsg324-1
