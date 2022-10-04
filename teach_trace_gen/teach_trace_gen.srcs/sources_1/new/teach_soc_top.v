@@ -168,9 +168,9 @@ confreg confreg (
 // vga
 vga vga(
     .clk(clk),
-    .rstn(resetn),
+    .rst(resetn),
     
-    .num(vga_num),
+    .vga_num(vga_num),
     
     .hs(hs),
     .vs(vs),
